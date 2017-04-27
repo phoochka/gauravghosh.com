@@ -43,21 +43,9 @@ body {
 
 }
 
-h1 {
-    font-family: 'Fjalla One', sans-serif;
-}
-
-h3 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight:400;
-}
-
-small {
-    font-weight: 300;
-}
-
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 p {
@@ -70,29 +58,15 @@ ul {
     list-style: none;
 }
 
-article > p {
-    display: block;
-
-    margin-top: 1em;
-    margin-bottom: 1.5em;
-    padding-bottom: 1em;
-
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-
-    font-size: 0.9em;
-}
 
 header {
     max-width: 580px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 5em;
-
     align-content: center;
 }
+
 header ul {
     list-style-type: none;
     margin: 0;
@@ -132,8 +106,8 @@ header a:hover {
     text-decoration: underline;
 }
 
-header .active {
-    color: red;
+header a#active {
+    color: red; 
 }
 
 img {
@@ -207,6 +181,37 @@ main {
     line-height: 1.6em;
 }
 
+article > h3 {
+    font-weight:400;
+    padding: 0;
+    margin: 0;
+}
+article > h3 > a {
+   font-size: small;
+   float: right;
+   font-weight:700;
+}
+
+article > small {
+    font-weight:400;
+    font-size: 0.65em;
+
+    background-color: #000019;
+    color: #fbfbfb;
+
+
+    padding: 0.3em;
+    margin: 0.1em;
+}
+
+
+article > p {
+    display: block;
+    font-size: 0.9em;
+    padding-top: 0.1em;
+    padding-bottom: 0.8em;
+    margin: 0;
+}
 .contacts {
     font-weight: 300;
     font-size: 0.9em;
@@ -229,11 +234,9 @@ footer {
     width: 100%;
 
     position: absolute;
-    /* right: 0; */
     bottom: 0;
     left: calc(50% - 290px);
 
-    /* background-color: #E1E0E0; */
     text-align: center;
     border-top-style: solid;
     border-top-color: red;
@@ -242,14 +245,14 @@ footer {
 }
 
 footer > p {
-    /* font-family: 'Fjalla One', sans-serif; */
-
-    /* font-size: 1em; */
-    /* padding: 0.1em; */
     margin: 0;
     padding: 0.2em;
 
-    /* text-decoration: none; */
+    color: inherit;
+}
+
+footer > a, a:visited {
+    text-decoration: none;
     color: inherit;
 }
 
