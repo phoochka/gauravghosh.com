@@ -12,6 +12,15 @@
  *
  */
 
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -20,8 +29,10 @@ body {
 
     min-height: 100%;
 
-    padding-top: 2em;
-    padding-bottom: 6rem;
+    /* padding-top: 2em; */
+    /* padding-bottom: 6rem; */
+
+    padding: 2em 1em 3em;
 
     /* font-family: 'Lato', sans-serif; */
     font-family: 'Open Sans', sans-serif;
@@ -34,10 +45,32 @@ body {
 
 h1 {
     font-family: 'Fjalla One', sans-serif;
-    /* font-size: 1em; */
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight:400;
+}
+
+small {
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
 }
 
 p {
+    font-size: 0.8em;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+ul {
+    list-style: none;
+}
+
+article > p {
     display: block;
 
     margin-top: 1em;
@@ -50,8 +83,6 @@ p {
     -webkit-margin-end: 0px;
 
     font-size: 0.9em;
-
-    line-height: 1.6;
 }
 
 header {
@@ -105,19 +136,11 @@ header .active {
     color: red;
 }
 
-.brand {
-
-}
-
 img {
     display: inline;
     margin: 0 auto;
-    height: 155%;
-
-
+    height: 150%;
     width: auto;
-
-    vertical-align: middle;
 }
 
 .center-landing {
@@ -177,38 +200,57 @@ img {
 
 
 main {
-    min-height: calc(100vh - 70px);
-
-    max-width: 580px;
-
     margin:0 auto;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
+    max-width: 580px;
 
     font-size: 17px;
     line-height: 1.6em;
+}
 
-    /* min-height: 100%; */
+.contacts {
+    font-weight: 300;
+    font-size: 0.9em;
+}
 
-    /* padding-bottom: 2em; */
+.contacts > ul > li {
+    font-weight: 400;
+}
 
+.contacts a,a:visited {
+   color: inherit;
+}
+
+.contacts a:hover {
+    text-decoration: underline;
 }
 
 footer {
-    /* max-width: 580px; */
+    max-width: 580px;
     width: 100%;
 
     position: absolute;
-    right: 0;
+    /* right: 0; */
     bottom: 0;
-    left: 0;
+    left: calc(50% - 290px);
 
-    background-color: #efefef;
+    /* background-color: #E1E0E0; */
     text-align: center;
     border-top-style: solid;
     border-top-color: red;
-    border-top-width: 0.5em;
+    border-top-width: 0.4em;
 
+}
+
+footer > p {
+    /* font-family: 'Fjalla One', sans-serif; */
+
+    /* font-size: 1em; */
+    /* padding: 0.1em; */
+    margin: 0;
+    padding: 0.2em;
+
+    /* text-decoration: none; */
+    color: inherit;
 }
 
 hr {
