@@ -206,18 +206,19 @@ article > small {
 
 article > p {
     display: block;
-    font-size: 0.9em;
+    /* font-size: 0.9em; */
     padding-top: 0.1em;
     padding-bottom: 0.8em;
     margin: 0;
 }
 .contacts {
     font-weight: 300;
-    font-size: 0.9em;
+    font-size: 0.95em;
 }
 
 .contacts > ul > li {
     font-weight: 400;
+    padding-top: 0.5em;
 }
 
 .contacts a,a:visited {
